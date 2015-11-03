@@ -91,7 +91,7 @@ page.open(address, function (status) {
 									callback();
 								}
 							})(angular.element('.slide'), geraSS);
-            }, 250);
+						}, 250);
 					}
 				}, 250);
 			}

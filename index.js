@@ -7,10 +7,11 @@ var childArgs = [
 	path.join(__dirname, 'phantomjs-script.js'),
 	'http://dev.fourtwo.com.br:88/board/report_view.php?idreport=253&sld=27360',
 	'teste.png'
-	,'--debug'
+	//,'--debug'
 ]
-
+console.time('print Total time');
 var ls = childProcess.execFile(binPath, childArgs, function (err, stdout, stderr) {
+	console.timeEnd('print Total time');
 	if (err) console.error('Error:', err);
 });
 
